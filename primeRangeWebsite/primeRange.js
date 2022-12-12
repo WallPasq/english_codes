@@ -21,5 +21,3 @@ function primeRange(initial_number, final_number) {
     primes = primes.filter(prime => prime >= initial_number);
     return primes;
 }
-
-console.log(primeRange(2, 100));
