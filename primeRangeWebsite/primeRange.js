@@ -1,10 +1,13 @@
-function primeRange(initial_number, final_number) {
+function primeRange() {
     let primes = [];
     let is_prime = true;
     let limit = 0;
-    for (let n = 2; n < (final_number + 1); n++) {
-        limit = Math.ceil(n / 2);
-        for (let i = 0; i < primes.length; i++) {
+    let final_number = Number(document.getElementById("finalNumber").value);
+
+    for (let n=2; n<(final_number+1); n++) {
+        limit = Math.ceil(Math.sqrt(n));
+
+        for (let i=0; i<primes.length; i++) {
             if (primes[i] > limit) {
                 break;
             }
@@ -18,6 +21,5 @@ function primeRange(initial_number, final_number) {
         }
         is_prime = true;
     }
-    primes = primes.filter(prime => prime >= initial_number);
-    return primes;
+    document.getElementById('printPrimeRange').innerHTML = primes;
 }

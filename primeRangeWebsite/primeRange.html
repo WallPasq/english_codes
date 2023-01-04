@@ -5,14 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Prime range</title>
     </head>
-    <body>
-        <script src="primeRange.js"></script>
+    <body></body>
         <h1>
             Prime Number Range Generator
         </h1>
-        <p>
-            For now, use the terminal (via F12 in Google Chrome, Microsoft Edge and Mozilla Firefox browsers) to access the prime range generator,<br>
-            via the primeRange function. Enter the start number and end number of the range in it. For example: primeRange(2, 25000).
-        </p>
+        <p>Enter up to which number you want to generate the range of prime numbers,
+            and click the button below to generate it.</p>
+        <input type="number" id="finalNumber" value="100">
+        <button onclick="primeRange()">Generate</button>
+        <div id="printPrimeRange"></div>
+        <script src="primeRange.js"></script>
     </body>
 </html>
