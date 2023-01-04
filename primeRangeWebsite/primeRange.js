@@ -21,5 +21,5 @@ function primeRange() {
         }
         is_prime = true;
     }
-    document.getElementById('printPrimeRange').innerHTML = primes;
+    document.getElementById('printPrimeRange').innerHTML = primes.join(', ');
 }
