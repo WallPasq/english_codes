@@ -4,8 +4,29 @@
     font-family: "Poppins";
     font-weight: normal;
     font-style: normal;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/background.jpg");
 }
 
 h1 {
-    font-weight: bold;
+    background-color: white;
+}
+
+p {
+    background-color: white;
+}
+
+#printPrimeRange {
+    background-color: white;
 }
