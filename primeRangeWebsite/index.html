@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Prime range</title>
-</head>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
 
-<body>
+  <body>
     <h1>Prime number range generator</h1>
     <p>
-        Enter how many prime numbers you want to generate and click the button below to generate them.
+      Enter how many prime numbers you want to generate <br />
+      and click the button below to generate them.
     </p>
-    <input type="text" id="count" placeholder="100" maxlength=6>
-    <button onclick="primeRange()">Generate</button>
-    <div id="printPrimeRange"></div>
-    <script src="./js/generator.js"></script>
-</body>
-
+    <div class="userInput" id="userInput">
+      <input type="text" id="count" placeholder="100" maxlength="6" />
+      <button onclick="primeRange()">Generate</button>
+    </div>
+    <div class="printPrimeRange" id="printPrimeRange"></div>
+    <button onclick="copyText()">Copy text</button>
+    <div class="msgCopy" id="msgCopy"></div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
